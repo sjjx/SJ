@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA24B67D6BD386E15520B94 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A76AF677C25A918E07198D6 /* libPods.a */; };
 		256DE3DF1CA293DB000EFC7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE3DE1CA293DB000EFC7E /* main.m */; };
 		256DE3E21CA293DC000EFC7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE3E11CA293DC000EFC7E /* AppDelegate.m */; };
 		256DE3E51CA293DC000EFC7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE3E41CA293DC000EFC7E /* ViewController.m */; };
@@ -15,7 +16,10 @@
 		256DE3ED1CA293DC000EFC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256DE3EB1CA293DC000EFC7E /* LaunchScreen.storyboard */; };
 		256DE3F81CA293DC000EFC7E /* SJPullScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE3F71CA293DC000EFC7E /* SJPullScrollViewTests.m */; };
 		256DE4031CA293DC000EFC7E /* SJPullScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256DE4021CA293DC000EFC7E /* SJPullScrollViewUITests.m */; };
-		256DE4111CA2963C000EFC7E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 256DE4101CA2963C000EFC7E /* Podfile */; };
+		25CFB01D1CA37EDB00B954E3 /* SJPullScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CFB01C1CA37EDB00B954E3 /* SJPullScrollView.m */; };
+		25CFB01F1CA3805200B954E3 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 25CFB01E1CA3805200B954E3 /* podfile */; };
+		25CFB0221CA3C8AE00B954E3 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CFB0201CA3C8AE00B954E3 /* header.jpg */; };
+		25CFB0231CA3C8AE00B954E3 /* footer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CFB0211CA3C8AE00B954E3 /* footer.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,14 @@
 		256DE3FE1CA293DC000EFC7E /* SJPullScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJPullScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		256DE4021CA293DC000EFC7E /* SJPullScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJPullScrollViewUITests.m; sourceTree = "<group>"; };
 		256DE4041CA293DC000EFC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		256DE4101CA2963C000EFC7E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = SJPullScrollView/Podfile; sourceTree = "<group>"; };
+		25CFB01B1CA37EDB00B954E3 /* SJPullScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPullScrollView.h; sourceTree = "<group>"; };
+		25CFB01C1CA37EDB00B954E3 /* SJPullScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPullScrollView.m; sourceTree = "<group>"; };
+		25CFB01E1CA3805200B954E3 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		25CFB0201CA3C8AE00B954E3 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = header.jpg; path = ../header.jpg; sourceTree = "<group>"; };
+		25CFB0211CA3C8AE00B954E3 /* footer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = footer.jpg; path = ../footer.jpg; sourceTree = "<group>"; };
+		7A76AF677C25A918E07198D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A176EFFF942FADAD9E88D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C43C7D631B6A93E00D682340 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA24B67D6BD386E15520B94 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +95,13 @@
 		256DE3D11CA293DB000EFC7E = {
 			isa = PBXGroup;
 			children = (
-				256DE4101CA2963C000EFC7E /* Podfile */,
+				25CFB01E1CA3805200B954E3 /* podfile */,
 				256DE3DC1CA293DB000EFC7E /* SJPullScrollView */,
 				256DE3F61CA293DC000EFC7E /* SJPullScrollViewTests */,
 				256DE4011CA293DC000EFC7E /* SJPullScrollViewUITests */,
 				256DE3DB1CA293DB000EFC7E /* Products */,
+				39B2BCDB7DF6FA16681979BB /* Pods */,
+				4FA4A6E845D955A0203ABBB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +118,9 @@
 		256DE3DC1CA293DB000EFC7E /* SJPullScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				25CFB0201CA3C8AE00B954E3 /* header.jpg */,
+				25CFB0211CA3C8AE00B954E3 /* footer.jpg */,
+				25CFB01A1CA37E9D00B954E3 /* custom */,
 				256DE3E01CA293DB000EFC7E /* AppDelegate.h */,
 				256DE3E11CA293DC000EFC7E /* AppDelegate.m */,
 				256DE3E31CA293DC000EFC7E /* ViewController.h */,
@@ -143,6 +160,32 @@
 			path = SJPullScrollViewUITests;
 			sourceTree = "<group>";
 		};
+		25CFB01A1CA37E9D00B954E3 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				25CFB01B1CA37EDB00B954E3 /* SJPullScrollView.h */,
+				25CFB01C1CA37EDB00B954E3 /* SJPullScrollView.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		39B2BCDB7DF6FA16681979BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88A176EFFF942FADAD9E88D6 /* Pods.debug.xcconfig */,
+				C43C7D631B6A93E00D682340 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FA4A6E845D955A0203ABBB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A76AF677C25A918E07198D6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 256DE4071CA293DC000EFC7E /* Build configuration list for PBXNativeTarget "SJPullScrollView" */;
 			buildPhases = (
+				54C109BB7425BF985FF9307A /* Check Pods Manifest.lock */,
 				256DE3D61CA293DB000EFC7E /* Sources */,
 				256DE3D71CA293DB000EFC7E /* Frameworks */,
 				256DE3D81CA293DB000EFC7E /* Resources */,
+				1C89659E48778DA6F69077B2 /* Embed Pods Frameworks */,
+				7537B81BC672184B0F17CAEB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				256DE3ED1CA293DC000EFC7E /* LaunchScreen.storyboard in Resources */,
+				25CFB0221CA3C8AE00B954E3 /* header.jpg in Resources */,
 				256DE3EA1CA293DC000EFC7E /* Assets.xcassets in Resources */,
-				256DE4111CA2963C000EFC7E /* Podfile in Resources */,
+				25CFB01F1CA3805200B954E3 /* podfile in Resources */,
+				25CFB0231CA3C8AE00B954E3 /* footer.jpg in Resources */,
 				256DE3E81CA293DC000EFC7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,12 +317,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C89659E48778DA6F69077B2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C109BB7425BF985FF9307A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7537B81BC672184B0F17CAEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		256DE3D61CA293DB000EFC7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				256DE3E51CA293DC000EFC7E /* ViewController.m in Sources */,
+				25CFB01D1CA37EDB00B954E3 /* SJPullScrollView.m in Sources */,
 				256DE3E21CA293DC000EFC7E /* AppDelegate.m in Sources */,
 				256DE3DF1CA293DB000EFC7E /* main.m in Sources */,
 			);
@@ -413,6 +510,7 @@
 		};
 		256DE4081CA293DC000EFC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A176EFFF942FADAD9E88D6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJPullScrollView/Info.plist;
@@ -424,6 +522,7 @@
 		};
 		256DE4091CA293DC000EFC7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43C7D631B6A93E00D682340 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJPullScrollView/Info.plist;
@@ -500,6 +599,7 @@
 				256DE4091CA293DC000EFC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256DE40A1CA293DC000EFC7E /* Build configuration list for PBXNativeTarget "SJPullScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +608,7 @@
 				256DE40C1CA293DC000EFC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256DE40D1CA293DC000EFC7E /* Build configuration list for PBXNativeTarget "SJPullScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +617,7 @@
 				256DE40F1CA293DC000EFC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
